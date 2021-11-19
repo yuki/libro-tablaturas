@@ -1,0 +1,106 @@
+\documentclass[10pt]{yuki}
+%Paquetes necesarios
+%\usepackage[]{geometry}
+\usepackage[spanish]{babel}
+%\usepackage{graphicx}
+%\usepackage{color}
+%\usepackage{calc}
+\usepackage{gchords}
+\usepackage{guitar}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref} %para que haya enlaces internos y el indice del visualizador
+%\hypersetup{colorlinks,linkcolor=blue} %el color de los enlaces internos
+
+\setcounter{secnumdepth}{0} % Para que no salgan los nums en el indice :D
+
+
+%Esto es para lo que aparece en la portada
+\autor{Yuki}
+\titulo{Libro de Tablaturas para guitarra}
+\anio{agosto - 2003} %Año
+\volumen{1}
+
+%
+%--------PRINCIPIO DEL DOCUMENTO--------
+%
+\begin{document}
+\begin{small}
+
+%El comando que crea la portada (aparece en yuki.cls)
+\hacerportada
+\vspace*{\fill}\par
+\pagebreak
+%
+% Lo que se ponga en este trozo es lo que iría detras de la portada, 
+% a la izquierda del Indice ^_^
+%
+
+%--Para crear el indice
+\tableofcontents
+%
+% Y a partir de aqui se hacen "input" de las canciones
+%
+\chapter{Avril Lavigne}
+%\includegraphics{./im/avril.jpg}
+\input{avril_lavigne/complicated.tex}
+\input{avril_lavigne/dont_tell_me.tex}
+\input{avril_lavigne/im_with_you.tex}
+\input{avril_lavigne/my_happy_ending.tex}
+\input{avril_lavigne/sk8er_boi.tex}
+\input{avril_lavigne/things_ill_never_say.tex}
+\input{avril_lavigne/tomorrow.tex}
+
+\chapter{Celtas Cortos}
+\input{celtas/20_de_abril.tex}
+\input{celtas/aguantando_el_tiron.tex}
+\input{celtas/calida_trinchera.tex}
+\input{celtas/la_senda_del_tiempo.tex}
+\input{celtas/lluvia_en_soledad.tex}
+
+\chapter{Dover}
+\input{dover/cold.tex}
+\input{dover/king_george.tex}
+\input{dover/lolyjackson.tex}
+\input{dover/my_secret.tex}
+\input{dover/straight_to_jail.tex}
+
+\chapter{Euskeraz}
+\input{euskeraz/arratsalde.tex}
+\input{euskeraz/behin_batian.tex}
+\input{euskeraz/egun_argian.tex}
+
+\chapter[Evanescence]{\includegraphics[height=3cm]{im/evanescence2.png}}
+\input{evanescence/going_under.tex}
+\input{evanescence/my_immortal.tex}
+
+\chapter{Green Day}
+\input{green_day/basket_case.tex}
+\input{green_day/time_of_your_life.tex}
+
+\chapter[La Fuga]{\includegraphics[height=3cm]{im/la_fuga.png}}
+\input{la_fuga/hasta_nunca.tex}
+\input{la_fuga/paqui_palla.tex}
+
+%\chapter{MClan}
+\chapter[MClan]{\includegraphics[height=3cm]{im/mclan.png}}
+\input{mclan/carolina.tex}
+\input{mclan/la_calma.tex}
+
+\chapter{Nirvana}
+\input{nirvana/about_a_girl.tex}
+\input{nirvana/come_as_you_are.tex}
+\input{nirvana/jesus_doesnt.tex}
+\input{nirvana/penyrroyal_tea.tex}
+\input{nirvana/polly.tex}
+\input{nirvana/wheere.tex}
+
+\chapter{Varios}
+\input{varios/al_amanecer.tex}
+\input{varios/animal_instinct.tex}
+\input{varios/dont_speak.tex}
+\input{varios/knocking_on_heavens_door.tex}
+%
+%--------FIN DEL DOCUMENTO--------
+%
+\end{small}
+\end{document}
